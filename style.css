@@ -14,7 +14,6 @@ body {
     background: rgb(9, 12, 12);
 
 }
-
 nav {
 	margin: 27px auto 0;
 	position: relative;
@@ -108,4 +107,99 @@ p {
 
 span {
     color: #2BD6B4;
+}
+
+.profile div {
+    position: absolute;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+
+}
+
+.square {
+    width: 320px;
+    height: 450px;
+    background-color: darkslategrey;
+    opacity: 0.7;
+    z-index: 10;
+    top:180px;
+
+}
+
+.circle-trans {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: solid 30px green;
+    opacity: .2;
+    z-index: 19;
+    top:190px;
+
+}
+
+.circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: solid 15px green;
+    z-index: 21;
+    top:220px;
+
+}
+
+.profile-img {
+    top:234px;
+    z-index: 20;
+}
+
+.profile-img img {
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+
+}
+
+.square-text{
+    font-size: 1.9rem;
+    color: white;
+    top:480px;
+    z-index: 11;
+
+}
+.square-text-2 {
+    font-size: 1rem;
+    color: white;
+    top: 520px;
+    z-index: 11;
+}
+
+.square-text-3 {
+    font-size: 1.3rem;
+    color: red;
+    top:600px;
+    z-index: 11;
+}
+.square-text-3:hover {
+    border-bottom: green;
+}
+
+.square-text-3 a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+.contact-icon {
+    top:450px;
+    z-index: 11;
+
+}
+.contact-icon img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.contact-icon img:hover {
+    transform: scale(1.2);
 }
