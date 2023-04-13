@@ -92,39 +92,10 @@ span {
     justify-content: center;
 }
 
-.square {
-    width: 320px;
-    height: 450px;
-    background-color: darkslategrey;
-    opacity: 0.7;
-    z-index: 10;
-    top:180px;
-
-}
-
-.profile .circle-trans {
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    border: solid 30px green;
-    opacity: .2;
-    z-index: 19;
-    top:190px;
-
-}
-
 .profile .fijo{
     position: relative;
 }
-.circle {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    border: solid 15px green;
-    z-index: 21;
-    top:220px;
 
-}
 
 .profile-img {
     top:234px;
@@ -138,34 +109,7 @@ span {
 
 }
 
-.square-text{
-    font-size: 1.9rem;
-    color: white;
-    top:480px;
-    z-index: 11;
 
-}
-.square-text-2 {
-    font-size: 1rem;
-    color: white;
-    top: 520px;
-    z-index: 11;
-}
-
-.square-text-3 {
-    font-size: 1.3rem;
-    color: red;
-    top:600px;
-    z-index: 11;
-}
-.square-text-3:hover {
-    border-bottom: green;
-}
-
-.square-text-3 a {
-    color: var(--secondary);
-    text-decoration: none;
-}
 .contact-icon {
     top:450px;
     z-index: 11;
@@ -204,9 +148,25 @@ span {
 .educacion {
     width: 100%;
     height: 100%;
-    display: flex;
+    background: #2BD6B4;
+}
+
+.educacion p{
+    color: red;
 }
 
 .educacion h1{
     color: white;
+}
+
+.proyecto{
+    width: 100%;
+    height: 100%;
+    background: #34495e;
+}
+.proyecto h1{
+    color: blueviolet;
+}
+.proyecto p {
+    color: yellow;
 }
