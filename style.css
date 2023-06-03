@@ -12,17 +12,17 @@ html {
 
 #menu {
 	position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: #0a0c1f;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Asegura que el menú esté por encima de otros elementos */
-    z-index: 999;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 200px;
+	background-color: #0a0c1f;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Asegura que el menú esté por encima de otros elementos */
+	z-index: 999;
 }
 
 .profile {
@@ -87,7 +87,7 @@ a:hover {
 
 #contenido {
 	flex: 1;
-	background-image: url('photo-1627399270231-7d36245355a9.avif');
+	background-image: url('photo-1617042375876-a13e36732a04.jpeg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -96,7 +96,10 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-attachment: fixed;
+
 }
+
 
 #inicio {
 	position: relative;
@@ -119,11 +122,11 @@ a:hover {
 
 #inicio h1,
 #inicio h2 {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    z-index: 1;
-    color: #edeff3;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+	color: #edeff3;
 }
 
 #inicio h1 {
@@ -134,22 +137,76 @@ a:hover {
 
 #inicio h2 {
 	font-size: 28px;
-	margin-bottom: -50px;
 	font-weight: lighter;
 }
 
 #sobre-mi {
     background-color: #0a0c1f;
-    padding: 20px;
+    margin-left: 200px; /* Ajusta el valor según la altura de tu menú */
 }
 
+
 .contenido-seccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    background-color: #5a4747;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* Alinea el contenido a la izquierda */
+	text-align: center;
+	/* Alinea el texto a la izquierda */
+	padding: 20px;
+	background-color: #5a4747;
+	color: #fff;
+}
+
+
+.contenido-seccion h2 {
+	font-size: 35px;
+	border-bottom: 4px solid blue;
+	line-height: 1.3;
+	margin-right: 880px;
+}
+#sobre-mi p {
+    font-size: 18px;
+    line-height: 1.5;
     color: #fff;
+    margin-bottom: 0;
+}
+#sobre-mi h3 {
+    flex-basis: calc(50% - 10px); /* Establece el ancho de cada columna */
+    color: #fff;
+}
+
+#sobre-mi ul {
+    flex-basis: calc(50% - 10px); /* Establece el ancho de cada columna */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sobre-mi ul li {
+    margin-bottom: 10px;
+}
+.datos {
+    display: flex;
+}
+
+.educacion, .experiencia {
+    flex: 1;
+    position: relative;
+}
+
+.educacion::before, .experiencia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px; /* Ancho de la línea vertical */
+    background-color: #ff0000; /* Color de la línea vertical */
+}
+
+.educacion ul, .experiencia ul {
+    margin-left: 10px; /* Espacio para separar la lista del borde vertical */
 }
