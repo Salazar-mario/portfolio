@@ -23,6 +23,7 @@ html {
 	align-items: center;
 	/* Asegura que el menú esté por encima de otros elementos */
 	z-index: 999;
+
 }
 
 .profile {
@@ -141,8 +142,9 @@ a:hover {
 }
 
 #sobre-mi {
-    background-color: #0a0c1f;
-    margin-left: 200px; /* Ajusta el valor según la altura de tu menú */
+	background-color: #0a0c1f;
+	margin-left: 200px;
+	/* Ajusta el valor según la altura de tu menú */
 }
 
 
@@ -154,8 +156,8 @@ a:hover {
 	/* Alinea el contenido a la izquierda */
 	text-align: center;
 	/* Alinea el texto a la izquierda */
-	padding: 20px;
-	background-color: #5a4747;
+	padding: 5px;
+	background-color: #0a0c1f;
 	color: #fff;
 }
 
@@ -164,49 +166,86 @@ a:hover {
 	font-size: 35px;
 	border-bottom: 4px solid blue;
 	line-height: 1.3;
-	margin-right: 880px;
+	margin-right: 860px;
 }
+
 #sobre-mi p {
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
-    margin-bottom: 0;
-}
-#sobre-mi h3 {
-    flex-basis: calc(50% - 10px); /* Establece el ancho de cada columna */
-    color: #fff;
-}
-
-#sobre-mi ul {
-    flex-basis: calc(50% - 10px); /* Establece el ancho de cada columna */
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    width: 980px;
+    margin: 0 auto;
+    text-indent: 2em;
+    text-align: justify;
 }
 
-#sobre-mi ul li {
-    margin-bottom: 10px;
-}
-.datos {
-    display: flex;
+
+
+
+#educacion ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	margin-left: 0;
+	/* Ajusta el margen izquierdo */
 }
 
-.educacion, .experiencia {
-    flex: 1;
-    position: relative;
+#educacion li {
+	margin-bottom: 10px;
+	margin-left: 20px;
+	/* Ajusta el margen izquierdo */
+}
+#habilidades {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:center;
+	background-color: #0a0c1f;
+	padding: 20px;
 }
 
-.educacion::before, .experiencia::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 3px; /* Ancho de la línea vertical */
-    background-color: #ff0000; /* Color de la línea vertical */
+#habilidades h2 {
+	font-size: 35px;
+	border-bottom: 4px solid blue;
+	line-height: 1.3;
+	color: white;
+	margin-bottom: 20px;
+	width: 100%;
+	padding-left: 220px;
 }
 
-.educacion ul, .experiencia ul {
-    margin-left: 10px; /* Espacio para separar la lista del borde vertical */
+#habilidades h3 {
+	font-size: 30px;
+	color: white;
 }
+
+#habilidades div {
+	width: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#habilidades ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#habilidades li {
+	margin-bottom: 15px;
+}
+
+#habilidades span {
+	display: inline-block;
+	width: 100px;
+	font-weight: bold;
+	color: white;
+}
+
+#habilidades progress {
+	width: 100%;
+	height: 20px;
+}
+
+
+
