@@ -120,8 +120,30 @@
             </ul>
         </div>
     </section>
-</main>
+    <section id="proyectos" class="contenido-seccion">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <img src="Captura de pantalla (246).png" alt="Proyecto 1">
+            <h3>Proyecto 1</h3>
+            <p>Se crea pagina para portafolio con opcion de login que al ingresar se permite modificar los datos</p>
+            <a href="https://frontendprograma.web.app/" class="btn" target="_blank">Ver más</a>
+        </div>
+    </section>
+    <section id="contacto" class="contenido-seccion">
+        <h2>Contacto</h2>
+        <p class="descripcion">¡Estoy encantado de escuchar tus comentarios y responder a tus consultas!</p>
+        <form id="formulario-contacto" action="enviar_correo.php" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
 
+    </section>
+
+    </main>
 </body>
+<script src="contacto.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </html>

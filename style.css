@@ -3,6 +3,7 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 #container {
@@ -170,13 +171,13 @@ a:hover {
 }
 
 #sobre-mi p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
-    width: 980px;
-    margin: 0 auto;
-    text-indent: 2em;
-    text-align: justify;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #fff;
+	width: 980px;
+	margin: 0 auto;
+	text-indent: 2em;
+	text-align: justify;
 }
 
 
@@ -195,11 +196,12 @@ a:hover {
 	margin-left: 20px;
 	/* Ajusta el margen izquierdo */
 }
+
 #habilidades {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content:center;
+	justify-content: center;
 	background-color: #0a0c1f;
 	padding: 20px;
 }
@@ -247,5 +249,106 @@ a:hover {
 	height: 20px;
 }
 
+#proyectos {
+    background-color: #0a0c1f;
+    margin-left: 220px;
+    /* Ajusta el valor según la altura de tu menú */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.proyecto {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.proyecto img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.proyecto-info {
+    margin-bottom: 10px;
+}
+
+.proyecto h3 {
+    font-size: 20px;
+}
+
+.proyecto p {
+    font-size: 16px;
+    color: #e9e3e3;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #030303;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #5a1818;
+}
+
+#contacto {
+    background-color: #0a0c1f;
+    margin-left: 200px;
+    /* Ajusta el valor según la altura de tu menú */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+.descripcion {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#formulario-contacto textarea {
+    height: 100px;
+}
+
+#formulario-contacto button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario-contacto button:hover {
+    background-color: #444;
+}
 
 
