@@ -252,12 +252,12 @@ a:hover {
 
 #proyectos {
 	background-color: #0a0c1f;
+	flex-wrap: wrap;
 	margin-left: 220px;
 	/* Ajusta el valor según la altura de tu menú */
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: flex-start;
+	flex-direction: row;
 }
 
 .proyecto {
