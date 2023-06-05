@@ -24,6 +24,7 @@ html {
 	align-items: center;
 	/* Asegura que el menú esté por encima de otros elementos */
 	z-index: 999;
+	margin-bottom: 40px;
 
 }
 
@@ -89,7 +90,7 @@ a:hover {
 
 #contenido {
 	flex: 1;
-	background-image: url('photo-1617042375876-a13e36732a04.jpeg');
+	background-image: url('./img/photo-1617042375876-a13e36732a04.jpeg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -250,105 +251,232 @@ a:hover {
 }
 
 #proyectos {
-    background-color: #0a0c1f;
-    margin-left: 220px;
-    /* Ajusta el valor según la altura de tu menú */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+	background-color: #0a0c1f;
+	margin-left: 220px;
+	/* Ajusta el valor según la altura de tu menú */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .proyecto {
-    width: calc(50% - 10px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
+	width: calc(50% - 10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	/* Agrega un borde a la caja */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	/* Agrega una sombra a la caja */
+	transition: transform 0.3s, box-shadow 0.3s;
+	transform: scale(1);
 }
+
+.proyecto:hover {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	/* Aumenta la intensidad de la sombra al hacer hover */
+	transform: scale(0.9);
+}
+
 
 .proyecto img {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 10px;
+	width: 500px;
+	height: 300px;
+	object-fit: cover;
+	margin-bottom: 10px;
+	transition: transform 0.3s;
+	transform: scale(1);
 }
 
-.proyecto-info {
-    margin-bottom: 10px;
+.proyecto:hover img {
+	transform: scale(0.9);
 }
 
-.proyecto h3 {
-    font-size: 20px;
+.proyecto::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Color de fondo de la caja */
+	opacity: 0;
+	transition: opacity 0.3s;
+	pointer-events: none;
+	/* Agrega esta propiedad */
+
 }
 
+.proyecto:hover::after {
+	opacity: 1;
+}
+
+.proyecto h3,
 .proyecto p {
-    font-size: 16px;
-    color: #e9e3e3;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	/* Color del texto */
 }
+
+.proyecto a {
+	margin-top: 5px;
+	/* Ajusta el valor según tu preferencia */
+}
+
+
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #030303;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #030303;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #5a1818;
+	background-color: #444;
 }
 
 #contacto {
-    background-color: #0a0c1f;
-    margin-left: 200px;
-    /* Ajusta el valor según la altura de tu menú */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: #fff;
+	background-color: #0a0c1f;
+	margin-left: 200px;
+	/* Ajusta el valor según la altura de tu menú */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	color: #fff;
 }
+
 .descripcion {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 #formulario-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 400px;
 }
 
 #formulario-contacto input,
 #formulario-contacto textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
 }
 
 #formulario-contacto textarea {
-    height: 100px;
+	height: 100px;
 }
 
 #formulario-contacto button {
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+	padding: 10px 20px;
+	background-color: #000000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 #formulario-contacto button:hover {
-    background-color: #444;
+	background-color: #444;
 }
 
+@media screen and (max-width: 768px) {
+	#menu {
+		width: 100%;
+		/* Cambia el ancho a 100% */
+		position: static;
+		/* Cambia la posición a estática */
+	}
 
+	#contenido {
+		padding: 20px;
+		/* Ajusta el relleno */
+	}
+
+	.profile {
+		flex-direction: column;
+		/* Cambia la dirección del flex a columna */
+		align-items: center;
+		text-align: center;
+	}
+
+	.profile img {
+		margin-bottom: 10px;
+		/* Ajusta el margen inferior */
+	}
+
+	.profile h3 {
+		text-align: center;
+		/* Alinea el texto al centro */
+	}
+
+	#sobre-mi p {
+		width: 100%;
+		/* Cambia el ancho a 100% */
+		max-width: 100%;
+		/* Quita el ancho máximo */
+		margin: 0 auto;
+	}
+
+	#habilidades div {
+		width: 100%;
+		/* Cambia el ancho a 100% */
+		margin-right: 0;
+		/* Quita el margen derecho */
+	}
+
+	#proyectos {
+		width: 100%;
+		/* Cambia el ancho a 100% */
+		margin: 0;
+		/* Quita los márgenes */
+		padding: 20px;
+		/* Ajusta el relleno */
+		justify-content: center;
+		/* Alinea los proyectos al centro */
+	}
+
+	.proyecto {
+		width: 100%;
+		/* Cambia el ancho a 100% */
+		margin-bottom: 20px;
+		/* Ajusta el margen inferior */
+	}
+
+	.proyecto img {
+		width: 100%;
+		/* Cambia el ancho a 100% */
+		height: auto;
+		/* Cambia la altura a auto */
+	}
+
+	#contacto {
+		margin: 0;
+		/* Quita los márgenes */
+		padding: 20px 0;
+		/* Ajusta el relleno vertical */
+	}
+
+	#formulario-contacto {
+		width: 100%;
+		/* Cambia el ancho a 100% */
+		max-width: 100%;
+		/* Quita el ancho máximo */
+	}
+}
