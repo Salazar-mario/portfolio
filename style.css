@@ -474,87 +474,69 @@ a:hover {
 	background-color: #444;
 }
 
+/* Media Query para dispositivos móviles */
 @media screen and (max-width: 768px) {
+	#container {
+		flex-direction: column;
+	}
+
 	#menu {
 		width: 100%;
-		/* Cambia el ancho a 100% */
-		position: static;
-		/* Cambia la posición a estática */
+		margin-bottom: 20px;
 	}
 
 	#contenido {
-		padding: 20px;
-		/* Ajusta el relleno */
+		padding: 10px;
 	}
 
-	.profile {
-		flex-direction: column;
-		/* Cambia la dirección del flex a columna */
-		align-items: center;
-		text-align: center;
+	#inicio h1 {
+		font-size: 40px;
 	}
 
-	.profile img {
-		margin-bottom: 10px;
-		/* Ajusta el margen inferior */
-	}
-
-	.profile h3 {
-		text-align: center;
-		/* Alinea el texto al centro */
+	#inicio h2 {
+		font-size: 24px;
 	}
 
 	#sobre-mi p {
-		width: 100%;
-		/* Cambia el ancho a 100% */
-		max-width: 100%;
-		/* Quita el ancho máximo */
-		margin: 0 auto;
+		font-size: 18px;
+		margin-bottom: 40px;
+		/* Añade estas líneas para limitar la anchura del párrafo */
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
 	}
 
-	#habilidades div {
-		width: 100%;
-		/* Cambia el ancho a 100% */
-		margin-right: 0;
-		/* Quita el margen derecho */
+	#sobre-mi h2 {
+		font-size: 24px;
 	}
 
-	#proyectos {
-		width: 100%;
-		/* Cambia el ancho a 100% */
-		margin: 0;
-		/* Quita los márgenes */
-		padding: 20px;
-		/* Ajusta el relleno */
-		justify-content: center;
-		/* Alinea los proyectos al centro */
+	#sobre-mi p {
+		font-size: 16px;
 	}
 
-	.proyecto {
-		width: 100%;
-		/* Cambia el ancho a 100% */
-		margin-bottom: 20px;
-		/* Ajusta el margen inferior */
+	#proyectos h2 {
+		font-size: 24px;
 	}
 
-	.proyecto img {
-		width: 100%;
-		/* Cambia el ancho a 100% */
-		height: auto;
-		/* Cambia la altura a auto */
+	#proyectos .project h3 {
+		font-size: 18px;
 	}
 
-	#contacto {
-		margin: 0;
-		/* Quita los márgenes */
-		padding: 20px 0;
-		/* Ajusta el relleno vertical */
+	#proyectos .project p {
+		font-size: 14px;
 	}
 
-	#formulario-contacto {
-		width: 100%;
-		/* Cambia el ancho a 100% */
-		max-width: 100%;
-		/* Quita el ancho máximo */
+	#contacto h2 {
+		font-size: 24px;
+	}
+
+	#contacto p {
+		font-size: 16px;
+	}
+
+	#contacto form input,
+	#contacto form textarea {
+		width: 80%;
 	}
 }
