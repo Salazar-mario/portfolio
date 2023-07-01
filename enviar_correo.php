@@ -1,23 +1,15 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $mensaje = $_POST['mensaje'];
-
-    // Configurar los detalles del correo electrónico
-    $destinatario = 'mario.agustin.salazar@gmail.com'; // Cambia esto por tu dirección de correo electrónico
-    $asunto = 'Nuevo mensaje de contacto';
-    $contenido = "Nombre: $nombre\nEmail: $email\nMensaje: $mensaje";
-
-    // Enviar el correo electrónico
-    $enviado = mail($destinatario, $asunto, $contenido);
-
-    if ($enviado) {
-        echo 'Correo enviado exitosamente';
-    } else {
-        echo 'Error al enviar el correo';
-    }
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$nombre = $_POST["nombre"];
+$email = $_POST["email"];
+$mensaje = $_POST["mensaje"];
+$to = "mario.agustin.salazar@gmail.com";
+$subject = "Nuevo mensaje de contacto";
+$message = "Nombre: " . $nombre . "\n\nCorreo electrónico: " . $email . "\n\nMensaje: " . $mensaje;
+$headers = "From: " . $email;
+if (mail($to, $subject, $message, $headers)) {
+echo "Mensaje enviado con éxito.";
 } else {
-    echo 'Acceso no válido';
+echo "Error al enviar el mensaje.";
+}
 }
 ?>

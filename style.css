@@ -474,69 +474,46 @@ a:hover {
 	background-color: #444;
 }
 
-/* Media Query para dispositivos móviles */
-@media screen and (max-width: 768px) {
-	#container {
-		flex-direction: column;
-	}
 
-	#menu {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-
-	#contenido {
-		padding: 10px;
-	}
-
-	#inicio h1 {
-		font-size: 40px;
-	}
-
-	#inicio h2 {
-		font-size: 24px;
-	}
-
-	#sobre-mi p {
-		font-size: 18px;
-		margin-bottom: 40px;
-		/* Añade estas líneas para limitar la anchura del párrafo */
-		max-width: 800px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
-
-	#sobre-mi h2 {
-		font-size: 24px;
-	}
-
-	#sobre-mi p {
-		font-size: 16px;
-	}
-
-	#proyectos h2 {
-		font-size: 24px;
-	}
-
-	#proyectos .project h3 {
-		font-size: 18px;
-	}
-
-	#proyectos .project p {
-		font-size: 14px;
-	}
-
-	#contacto h2 {
-		font-size: 24px;
-	}
-
-	#contacto p {
-		font-size: 16px;
-	}
-
-	#contacto form input,
-	#contacto form textarea {
-		width: 80%;
-	}
+/* Estilos para pantallas de 600px o menos */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+   #menu {
+    width: 100%;
+  }
+   #contenido {
+    flex-direction: column;
+  }
+   .tarjeta {
+    width: 100%;
+  }
+   .proyecto {
+    width: 100%;
+  }
+   #formulario-contacto {
+    width: 100%;
+  }
+}
+ /* Estilos para pantallas de 900px o menos */
+@media (max-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+   #menu {
+    width: 150px;
+  }
+   #contenido {
+    flex-direction: row;
+  }
+   .tarjeta {
+    width: calc(50% - 10px);
+  }
+   .proyecto {
+    width: calc(50% - 10px);
+  }
+   #formulario-contacto {
+    width: 80%;
+  }
 }
