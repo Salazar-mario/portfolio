@@ -477,43 +477,54 @@ a:hover {
 
 /* Estilos para pantallas de 600px o menos */
 @media (max-width: 600px) {
-  body {
-    font-size: 18px;
-  }
-   #menu {
-    width: 100%;
-  }
-   #contenido {
-    flex-direction: column;
-  }
-   .tarjeta {
-    width: 100%;
-  }
-   .proyecto {
-    width: 100%;
-  }
-   #formulario-contacto {
-    width: 100%;
-  }
+	body {
+		font-size: 18px;
+	}
+
+	#menu {
+		width: 100%;
+	}
+
+	#contenido {
+		flex-direction: column;
+	}
+
+	.tarjeta {
+		width: 100%;
+	}
+
+	.proyecto {
+		width: 100%;
+	}
+
+	#formulario-contacto {
+		width: 100%;
+	}
 }
- /* Estilos para pantallas de 900px o menos */
+
+/* Estilos para pantallas de 900px o menos */
 @media (max-width: 900px) {
-  body {
-    font-size: 20px;
-  }
-   #menu {
-    width: 150px;
-  }
-   #contenido {
-    flex-direction: row;
-  }
-   .tarjeta {
-    width: calc(50% - 10px);
-  }
-   .proyecto {
-    width: calc(50% - 10px);
-  }
-   #formulario-contacto {
-    width: 80%;
-  }
+	body {
+		font-size: 20px;
+	}
+
+	#menu {
+		width: 150px;
+	}
+
+	#contenido {
+		flex-direction: row;
+	}
+
+	.tarjeta {
+		width: calc(50% - 10px);
+	}
+
+	.proyecto {
+		width: calc(50% - 10px);
+	}
+
+	#formulario-contacto {
+		width: 80%;
+	}
 }
