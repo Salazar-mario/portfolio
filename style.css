@@ -6,98 +6,19 @@ html {
 	scroll-behavior: smooth;
 }
 
-#container {
-	display: flex;
-	min-height: 100vh;
-}
-
 #menu {
 	position: fixed;
-	top: 0;
-	left: 0;
 	height: 100vh;
-	width: 200px;
+	width: 180px;
 	background-color: #0a0c1f;
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	/* Asegura que el menú esté por encima de otros elementos */
 	z-index: 999;
-	margin-bottom: 40px;
-}
 
-.profile {
-	margin-bottom: 10px;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
 }
-
-.profile img {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	align-items: center;
-	border: 2px solid #fff;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-.profile h3 {
-	margin-top: 20px;
-	font-size: 20px;
-	text-align: start;
-	color: #fff;
-	width: 100%;
-}
-
-.profile p {
-	font-size: 16px;
-	color: #fff;
-	width: 100%;
-	margin-top: -10px;
-	/* Ajusta el margen superior según tus preferencias */
-	margin-bottom: 20px;
-	/* Elimina el margen inferior */
-}
-
-.profile .icons {
-	display: flex;
-	width: 100%;
-}
-
-.profile .icons a {
-	display: flex;
-	margin-right: 10px;
-}
-
-.profile .icons a i {
-	margin-right: 25px;
-}
-
-ul {
-	list-style-type: none;
-	padding: 0;
-	width: 100%;
-}
-
-li {
-	margin-bottom: 10px;
-}
-
-a {
-	display: block;
-	text-decoration: none;
-	padding: 5px;
-	color: #e6e1e1;
-}
-
-a:hover {
-	background-color: #ccc2c2;
-	color: #000;
-}
-
-#contenido {
+#inicio {
 	flex: 1;
 	background-image: url('./img/photo-1617042375876-a13e36732a04.jpeg');
 	background-size: cover;
@@ -111,16 +32,9 @@ a:hover {
 	background-attachment: fixed;
 
 }
-
-
-#inicio {
-	position: relative;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	text-align: center;
-}
-
+#container {
+	display: flex;
+  }
 #inicio::before {
 	content: "";
 	position: absolute;
@@ -132,64 +46,9 @@ a:hover {
 	z-index: -1;
 }
 
-#inicio h1,
-#inicio h2 {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	z-index: 1;
-	color: #edeff3;
-}
-
-#inicio h1 {
-	font-size: 70px;
-	margin-bottom: 10px;
-	font-weight: bold;
-}
-
-#inicio h2 {
-	font-size: 28px;
-	font-weight: lighter;
-}
-
 #sobre-mi {
 	background-color: #0a0c1f;
-	margin-left: 200px;
 	/* Ajusta el valor según la altura de tu menú */
-}
-
-
-.contenido-seccion {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	/* Alinea el contenido a la izquierda */
-	text-align: center;
-	/* Alinea el texto a la izquierda */
-	padding: 5px;
-	background-color: #0a0c1f;
-	color: #fff;
-}
-
-.contenido-seccion h2 {
-	font-size: 35px;
-	line-height: 1.3;
-	margin-right: 860px;
-	position: relative;
-	/* Agrega una posición relativa para que los pseudoelementos se posicionen correctamente */
-}
-
-.contenido-seccion h2::after {
-	content: "";
-	position: absolute;
-	bottom: -4px;
-	left: 27%;
-	transform: translateX(-50%);
-	/* Posiciona el pseudoelemento en la mitad del texto */
-	height: 4px;
-	width: 50%;
-	background-color: blue;
 }
 
 #sobre-mi p {
