@@ -9,55 +9,57 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
-<body>
-   <header>
-    <nav id="menu" class="navbar navbar-dark bg-dark flex-column">
-            <!-- Aquí puedes mostrar la foto de perfil -->
-            <img src="./img/35460426 Salazar Mario Agustin-(foto).jpg" alt="Foto de perfil"
-                class="rounded-circle" width="100">
-            <h3>Mario Salazar</h3>
-            <p>Buenos Aires, Argentina</p>
-            <a href="https://www.linkedin.com/in/mario-agustin-salazar/" target="_blank"><i
-                    class="material-icons">person</i></a>
-            <a href="https://github.com/Salazar-mario" target="_blank"><i class="material-icons">code</i></a>
-            <a href="https://wa.me/+541138952683" target="_blank"><i class="material-icons">message</i></a>
+<body style="background-color:  #0a0c1f">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark custom-bg-color">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacion"><i class="fas fa-tools"></i> Habilidades</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos"><i class="fas fa-folder"></i> Proyectos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#inicio"><i class="material-icons"
-                        style="vertical-align: bottom;">home</i> Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#sobre-mi"> <i class="material-icons"
-                        style="vertical-align: bottom;">person</i> Sobre mí</a></li>
-            <li class="nav-item"><a class="nav-link" href="#educacion"><i class="material-icons"
-                        style="vertical-align: bottom;">build</i> Habilidades</a></li>
-            <li class="nav-item"><a class="nav-link" href="#proyectos"><i class="material-icons"
-                        style="vertical-align: bottom;">folder</i> Proyectos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto"><i class="material-icons"
-                        style="vertical-align: bottom;">mail</i> Contacto</a></li>
-        </ul>
     </nav>
-        <section id="inicio" class="py-5">
-            <h1 id="titulo-maquina" class="display-4">Mario Salazar</h1>
-            <h2>Desarrollador Full Stack Jr</h2>
+    
+        <section id="inicio" class="py-5 d-flex flex-column align-items-center justify-content-center">
+            <div class="container text-center">
+                <h1 id="titulo-maquina" class="display-4 text-white">Mario Salazar</h1>
+                <h2 class="text-white">Desarrollador Full Stack Jr</h2>
+            </div>
         </section>
-</header>
-<section id="sobre-mi" class="container py-5">
-<h2>Sobre mí</h2>
-<p>Soy un Desarrollador Full Stack Jr buscando mi primera experiencia laboral en el campo de IT. Tengo
-    conocimientos en aplicaciones web con Angular, MySQL, HTML, CSS, Java, JavaScript, Git, GitHub, Node.js y el
-    método SCRUM para trabajar en equipo. Me considero una persona responsable, organizada, persistente y con
-    actitud para crecer tanto profesional como personalmente. Me adapto fácilmente a nuevos proyectos, desafíos
-    y tecnologías.</p>
-</section>
+
+    </header>
+    <section id="sobre-mi" class="container py-5">
+        <h2 class="half-underline">Sobre mí</h2>
+        <p class="sangria">Soy un Desarrollador Full Stack Jr buscando mi primera experiencia laboral en el campo de IT.
+            Tengo
+            conocimientos en aplicaciones web con Angular, MySQL, HTML, CSS, Java, JavaScript, Git, GitHub, Node.js y el
+            método SCRUM para trabajar en equipo. Me considero una persona responsable, organizada, persistente y con
+            actitud para crecer tanto profesional como personalmente. Me adapto fácilmente a nuevos proyectos, desafíos
+            y tecnologías.</p>
+    </section>
+
     <section id="educacion" class="container py-5">
-        <h2>Educación</h2>
+        <h2 class="half-underline">Educación</h2>
         <div class="row">
             <div class="col-md-6">
-                <div class="card mb-3">
+                <div class="card mb-3 hover-effect">
                     <div class="card-body">
                         <h3 class="card-title">Desarrollador Web Front End</h3>
                         <p class="card-text">Mindhub Argentina Programa</p>
@@ -66,7 +68,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card mb-3">
+                <div class="card mb-3 hover-effect">
                     <div class="card-body">
                         <h3 class="card-title">Desarrollador Full Stack Jr</h3>
                         <p class="card-text">Argentina Programa</p>
@@ -77,42 +79,31 @@
             <!-- Agrega más tarjetas para tus logros educativos -->
         </div>
     </section>
+
     <section id="habilidades" class="container py-5">
-        <h2>Habilidades</h2>
+        <h2 class="half-underline">Habilidades</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="mb-4">
                     <h3>Front-end</h3>
                     <ul class="list-unstyled">
                         <li>
+                            <i class="fab fa-html5 icono-habilidad"></i>
                             <span>HTML</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100">80%</div>
-                            </div>
                         </li>
                         <li>
+                            <i class="fab fa-css3-alt icono-habilidad"></i>
                             <span>CSS</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
-                                    aria-valuemin="0" aria-valuemax="100">70%</div>
-                            </div>
                         </li>
                         <li>
+                            <i class="fab fa-js icono-habilidad"></i>
                             <span>JavaScript</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                                    aria-valuemin="0" aria-valuemax="100">60%</div>
-                            </div>
                         </li>
                         <li>
+                            <i class="fab fa-angular icono-habilidad"></i>
                             <span>Angular</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
-                                    aria-valuemin="0" aria-valuemax="100">50%</div>
-                            </div>
                         </li>
-                        <!-- Agrega más habilidades de Front-end con sus respectivos valores de progreso -->
+                        <!-- Agrega más habilidades de Front-end con sus respectivos iconos -->
                     </ul>
                 </div>
             </div>
@@ -121,34 +112,22 @@
                     <h3>Back-end</h3>
                     <ul class="list-unstyled">
                         <li>
+                            <i class="fab fa-java icono-habilidad"></i>
                             <span>Java</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
-                                    aria-valuemin="0" aria-valuemax="100">40%</div>
-                            </div>
                         </li>
                         <li>
+                            <i class="fab fa-node-js icono-habilidad"></i>
                             <span>Node.js</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
-                                    aria-valuemin="0" aria-valuemax="100">40%</div>
-                            </div>
                         </li>
                         <li>
+                            <i class="fas fa-gem icono-habilidad"></i>
                             <span>Ruby</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
-                                    aria-valuemin="0" aria-valuemax="100">50%</div>
-                            </div>
                         </li>
                         <li>
+                            <i class="fas fa-database icono-habilidad"></i>
                             <span>MySQL</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                                    aria-valuemin="0" aria-valuemax="100">60%</div>
-                            </div>
                         </li>
-                        <!-- Agrega más habilidades de Back-end con sus respectivos valores de progreso -->
+                        <!-- Agrega más habilidades de Back-end con sus respectivos iconos -->
                     </ul>
                 </div>
             </div>
@@ -157,34 +136,26 @@
                     <h3>Soft Skills</h3>
                     <ul class="list-unstyled">
                         <li>
+                            <i class="fas fa-comments icono-habilidad"></i>
                             <span>Comunicación efectiva</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100">80%</div>
-                            </div>
                         </li>
                         <li>
+                            <i class="fas fa-users icono-habilidad"></i>
                             <span>Trabajo en equipo</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
-                                    aria-valuemin="0" aria-valuemax="100">70%</div>
-                            </div>
                         </li>
                         <li>
+                            <i class="fas fa-cogs icono-habilidad"></i>
                             <span>Resolución de problemas</span>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                                    aria-valuemin="0" aria-valuemax="100">60%</div>
-                            </div>
                         </li>
-                        <!-- Agrega más habilidades de Soft Skills con sus respectivos valores de progreso -->
+                        <!-- Agrega más habilidades de Soft Skills con sus respectivos iconos -->
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="proyectos" class="container py-5">
-        <h2>Proyectos</h2>
+        <h2 class="half-underline">Proyectos</h2>
         <div class="row">
             <div class="col-md-6">
                 <div class="proyecto mb-4">
@@ -211,31 +182,64 @@
     </section>
 
     <section id="contacto" class="container py-5">
-        <h2>Contacto</h2>
-        <p class="descripcion">¡Estoy encantado de escuchar tus comentarios y responder a tus consultas!</p>
-        <form id="formulario-contacto" method="POST" action="https://formsubmit.co/mario.agustin.salazar@gmail.com">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico"
-                    required>
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contacto">
-            <input type="hidden" name="_captcha" value="false">
-        </form>
-    </section>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Contacto</h2>
+                        <p class="card-text text-center">¡Estoy encantado de escuchar tus comentarios y responder a tus
+                            consultas!</p>
+                        <form id="formulario-contacto" method="POST"
+                            action="https://formsubmit.co/mario.agustin.salazar@gmail.com">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contacto">
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center">
+                                <h3 class="footer-heading white-text">¡Contáctame!</h3>
+                                <p class="footer-text">Estoy disponible para oportunidades de trabajo y colaboraciones.
+                                    ¡No dudes en contactarme!</p>
+                                <ul class="social-media-list horizontal">
+                                    <a href="https://www.linkedin.com/in/mario-agustin-salazar/" target="_blank"
+                                        class="social-media-link"><i class="fab fa-linkedin fa-2x"></i></a>
+                                    <a href="https://github.com/Salazar-mario" target="_blank"
+                                        class="social-media-link"><i class="fab fa-github fa-2x"></i></a>
+                                    <a href="https://wa.me/+541138952683" target="_blank" class="social-media-link"><i
+                                            class="fab fa-whatsapp fa-2x"></i></a>
+                                    <!-- Agrega más enlaces de tus redes sociales aquí -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p class="footer-text">© 2023 Mario Salazar. Todos los derechos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
 
-
-    </main>
-
+                </footer>
+                <a href="#inicio" id="btn-arrow" class="btn-arrow"><i class="fas fa-arrow-up"></i></a>
+                </main>
 </body>
 <script src="contacto.js"></script>
 

@@ -30,3 +30,26 @@ function escribirTexto() {
 
 // Llamar a la función para iniciar el efecto de escritura
 escribirTexto();
+
+$(document).ready(function () {
+    $('nav').hover(function () {
+        $(this).toggleClass('hovered');
+    });
+});
+
+window.addEventListener('scroll', function () {
+    var btnArrow = document.getElementById('btn-arrow');
+    if (window.pageYOffset > 300) { // Mostrar el botón cuando el desplazamiento sea mayor a 300px
+        btnArrow.style.display = 'block';
+    } else {
+        btnArrow.style.display = 'none';
+    }
+});
+// Obtén el elemento del botón de hamburguesa y de la navegación colapsable
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navbarCollapse = document.querySelector('.navbar-collapse');
+
+// Agrega un evento de clic al botón de hamburguesa para alternar la visibilidad de la navegación
+navbarToggler.addEventListener('click', () => {
+  navbarCollapse.classList.toggle('show');
+});
