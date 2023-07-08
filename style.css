@@ -18,9 +18,12 @@ body {
 .navbar .nav-link {
 	color: white;
 }
+
 .custom-bg-color {
-	background-color: black; /* Cambia el color de fondo a un color personalizado (#ffa500) */
+	background-color: black;
+	/* Cambia el color de fondo a un color personalizado (#ffa500) */
 }
+
 h1,
 h2,
 h3,
@@ -39,8 +42,9 @@ span {
 #sobre-mi h2 {
 	color: white;
 }
+
 .sangria {
-    text-indent: 25px;
+	text-indent: 25px;
 }
 
 .half-underline {
@@ -74,12 +78,16 @@ span {
 h3 {
 	color: white;
 }
+
 .icono-habilidad {
-	font-size: 2.5rem; /* Ajusta el tamaño de los iconos según tus preferencias */
+	font-size: 2.5rem;
+	/* Ajusta el tamaño de los iconos según tus preferencias */
 	margin-right: 0.5rem;
-	margin-top: 0.5rem; /* Opcional: Agrega un margen derecho para separar los iconos del texto */
+	margin-top: 0.5rem;
+	/* Opcional: Agrega un margen derecho para separar los iconos del texto */
 	color: rgb(172, 243, 131);
 }
+
 .mb-4 h3 {
 	color: white;
 }
@@ -88,13 +96,16 @@ h3 {
 	color: white;
 
 }
-
 .proyecto {
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	padding: 20px;
 	transition: transform 0.3s ease;
+	flex-grow: 1;
+	overflow: hidden;
 }
+
+
 
 .proyecto:hover {
 	transform: scale(1.05);
