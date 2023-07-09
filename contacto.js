@@ -51,5 +51,50 @@ const navbarCollapse = document.querySelector('.navbar-collapse');
 
 // Agrega un evento de clic al botón de hamburguesa para alternar la visibilidad de la navegación
 navbarToggler.addEventListener('click', () => {
-  navbarCollapse.classList.toggle('show');
+    navbarCollapse.classList.toggle('show');
+});
+
+$(document).ready(function () {
+    // Obtén la posición de cada sección
+    var inicioOffset = $('#inicio').offset().top;
+    var sobreMiOffset = $('#sobre-mi').offset().top;
+    var educacionOffset = $('#educacion').offset().top;
+    var proyectosOffset = $('#proyectos').offset().top;
+    var contactoOffset = $('#contacto').offset().top;
+
+    // Agrega un evento de desplazamiento suave al hacer clic en los enlaces del navbar
+    $('.navbar-nav a').on('click', function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        var offset = 0; // Ajusta este valor según tus necesidades
+
+
+        $('html, body').animate({
+            scrollTop: $(target).offset().top - offset
+        }, 100 ,function () {
+            setTimeout(function () {
+                $('.navbar-nav a').removeClass('active');
+                $(event.target).addClass('active');
+            }, 0);
+        });
+    });
+
+    // Resalta el enlace activo según la posición de desplazamiento
+    $(window).scroll(function () {
+        var scrollPos = $(window).scrollTop();
+
+        $('.navbar-nav a').removeClass('active');
+
+        if (scrollPos >= inicioOffset && scrollPos < sobreMiOffset) {
+            $('.navbar-nav a[href="#inicio"]').addClass('active');
+        } else if (scrollPos >= sobreMiOffset && scrollPos < educacionOffset) {
+            $('.navbar-nav a[href="#sobre-mi"]').addClass('active');
+        } else if (scrollPos >= educacionOffset && scrollPos < proyectosOffset) {
+            $('.navbar-nav a[href="#educacion"]').addClass('active');
+        } else if (scrollPos >= proyectosOffset && scrollPos < contactoOffset) {
+            $('.navbar-nav a[href="#proyectos"]').addClass('active');
+        } else if (scrollPos >= contactoOffset) {
+            $('.navbar-nav a[href="#contacto"]').addClass('active');
+        }
+    });
 });

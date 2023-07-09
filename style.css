@@ -15,8 +15,10 @@ body {
 	color: white;
 }
 
-.navbar .nav-link {
-	color: white;
+.navbar-nav .nav-link.active {
+    color:   rgb(172, 243, 131) !important; /* Color de texto para el enlace activo */
+    font-weight: bold; /* Texto en negrita para el enlace activo */
+    /* Agrega otros estilos según tus preferencias */
 }
 
 .custom-bg-color {

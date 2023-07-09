@@ -16,7 +16,7 @@
 
 <body style="background-color:  #0a0c1f">
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark custom-bg-color">
+        <nav class="navbar navbar-expand-md navbar-dark custom-bg-color fixed-top">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,31 +24,27 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#inicio"><i class="fas fa-home"></i> Inicio</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user"></i> Sobre
-                                mí</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#educacion"><i class="fas fa-tools"></i>
-                                Habilidades</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#proyectos"><i class="fas fa-folder"></i>
-                                Proyectos</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i>
-                                Contacto</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#educacion"><i class="fas fa-tools"></i> Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#proyectos"><i class="fas fa-folder"></i> Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
+        
         <section id="inicio" class="py-5 d-flex flex-column align-items-center justify-content-center">
             <div class="container text-center">
                 <h1 id="titulo-maquina" class="display-4 text-white">Mario Salazar</h1>
                 <h2 class="text-white">Desarrollador Full Stack Jr</h2>
+                <div class="ubicacion mt-3">
+                    <i class="fas fa-map-marker-alt text-danger"></i>
+                    <span>Buenos Aires, Argentina</span>
+                </div>
+                <a href="/img/CV.Salazar-Mario.pdf" download class="btn btn-primary mt-3">Descargar CV</a>
             </div>
         </section>
-
     </header>
     <section id="sobre-mi" class="container py-5">
         <h2 class="half-underline">Sobre mí</h2>
@@ -59,7 +55,6 @@
             actitud para crecer tanto profesional como personalmente. Me adapto fácilmente a nuevos proyectos, desafíos
             y tecnologías.</p>
     </section>
-
     <section id="educacion" class="container py-5">
         <h2 class="half-underline">Educación</h2>
         <div class="row">
@@ -84,7 +79,6 @@
             <!-- Agrega más tarjetas para tus logros educativos -->
         </div>
     </section>
-
     <section id="habilidades" class="container py-5">
         <h2 class="half-underline">Habilidades</h2>
         <div class="row">
@@ -195,7 +189,6 @@
             </div>
         </div>
     </section>
-
     <section id="contacto" class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -230,7 +223,8 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-6 text-center">
-                                <p class="footer-text">Estoy disponible para oportunidades de trabajo y colaboraciones!</p>
+                                <p class="footer-text">Estoy disponible para oportunidades de trabajo y colaboraciones!
+                                </p>
                                 <ul class="social-media-list horizontal">
                                     <a href="https://www.linkedin.com/in/mario-agustin-salazar/" target="_blank"
                                         class="social-media-link"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -248,7 +242,6 @@
                             </div>
                         </div>
                     </div>
-
                 </footer>
                 <a href="#inicio" id="btn-arrow" class="btn-arrow"><i class="fas fa-arrow-up"></i></a>
                 </main>
