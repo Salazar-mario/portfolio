@@ -71,7 +71,7 @@ $(document).ready(function () {
 
         $('html, body').animate({
             scrollTop: $(target).offset().top - offset
-        }, 100 ,function () {
+        }, 100, function () {
             setTimeout(function () {
                 $('.navbar-nav a').removeClass('active');
                 $(event.target).addClass('active');

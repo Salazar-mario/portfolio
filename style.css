@@ -16,14 +16,12 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-    color:   rgb(172, 243, 131) !important; /* Color de texto para el enlace activo */
-    font-weight: bold; /* Texto en negrita para el enlace activo */
-    /* Agrega otros estilos según tus preferencias */
+	color: rgb(172, 243, 131) !important;
+	font-weight: bold;
 }
 
 .custom-bg-color {
 	background-color: black;
-	/* Cambia el color de fondo a un color personalizado (#ffa500) */
 }
 
 h1,
@@ -56,7 +54,6 @@ span {
 	background-size: 100% 4px;
 }
 
-
 #educacion h2 {
 	color: white;
 }
@@ -67,14 +64,11 @@ span {
 
 .hover-effect {
 	transition: transform 0.3s ease;
-
 }
 
 .hover-effect:hover {
 	transform: scale(1.05);
-	/* Agrega otros estilos o transiciones adicionales según tus preferencias */
 }
-
 
 #habilidades h2,
 h3 {
@@ -83,10 +77,8 @@ h3 {
 
 .icono-habilidad {
 	font-size: 2.5rem;
-	/* Ajusta el tamaño de los iconos según tus preferencias */
 	margin-right: 0.5rem;
 	margin-top: 0.5rem;
-	/* Opcional: Agrega un margen derecho para separar los iconos del texto */
 	color: rgb(172, 243, 131);
 }
 
@@ -96,8 +88,8 @@ h3 {
 
 #proyectos h2 {
 	color: white;
-
 }
+
 .proyecto {
 	border: 1px solid #ccc;
 	border-radius: 10px;
@@ -106,8 +98,6 @@ h3 {
 	flex-grow: 1;
 	overflow: hidden;
 }
-
-
 
 .proyecto:hover {
 	transform: scale(1.05);
@@ -132,7 +122,7 @@ h3 {
 }
 
 #contacto h2 {
-	color: white
+	color: white;
 }
 
 .btn-arrow {
@@ -149,7 +139,6 @@ h3 {
 	font-size: 20px;
 	transition: background-color 0.3s ease;
 	display: none;
-	/* Ocultar el botón por defecto */
 }
 
 .btn-arrow:hover {
@@ -171,12 +160,10 @@ h3 {
 
 .redes-sociales-heading {
 	color: #fff;
-	/* Color blanco */
 }
 
 .social-media-link {
 	margin-right: 10px;
-	/* Ajusta el valor según la separación deseada */
 }
 
 .white-text {
