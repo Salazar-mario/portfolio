@@ -70,6 +70,26 @@ span {
 .hover-effect:hover {
 	transform: scale(1.05);
 }
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.modal-content {
+    background-color: #0a0c1f !important;
+    color: white;
+}
+
+.modal-dialog {
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.modal-title {
+    color: white;
+}
+
 
 #habilidades h2,
 h3 {

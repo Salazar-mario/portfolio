@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body style="background-color:  #0a0c1f">
@@ -67,25 +69,69 @@
                         <h3 class="card-title">Desarrollador Web Front End</h3>
                         <p class="card-text">Mindhub Argentina Programa</p>
                         <p class="card-text">01/2023 al 03/2023</p>
-                        <a href="https://www.credly.com/badges/417a2bdd-2c0a-4a31-b6ef-094148594341/linked_in_profile" target="_blank" class="btn btn-primary">Ver certificado</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#modalCertificado1">Ver certificado</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card mb-3 hover-effect">
                     <div class="card-body text-center">
-                        <h3 class="card-title">Desarrollador Full Stack Jr</h3>
+                        <h3 class="card-title">Web Full Stack Jr</h3>
                         <p class="card-text">Argentina Programa</p>
                         <p class="card-text">11/2021 al 08/2022</p>
-                        <a href="https://drive.google.com/file/d/1k-HW0eAQe6_QTfd8dVcSLTnoUJ8gdzub/view" target="_blank" class="btn btn-primary">Ver certificado</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#modalCertificado2">Ver certificado</button>
                     </div>
                 </div>
             </div>
             <!-- Agrega más tarjetas para tus logros educativos -->
         </div>
     </section>
-    
-    
+    <section>
+    <!-- Modal Certificado 1 -->
+<div class="modal fade" id="modalCertificado1" tabindex="-1" role="dialog" aria-labelledby="modalCertificado1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCertificado1Label">Certificado Desarrollador Web Front End</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido del certificado -->
+                <img src="/img/certificado mindhub.png" alt="Certificado Desarrollador Web Front End" class="modal-image">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <a href="https://www.credly.com/badges/417a2bdd-2c0a-4a31-b6ef-094148594341/linked_in_profile" target="_blank" class="btn btn-primary">Ver certificado completo</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Modal Certificado 2 -->
+    <div class="modal fade" id="modalCertificado2" tabindex="-1" role="dialog" aria-labelledby="modalCertificado1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCertificado1Label">Certificado Web Full Stack Jr</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del certificado -->
+                    <img src="/img/Web.full.png" alt="Web Full Stack Jr" class="modal-image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <a href="https://drive.google.com/file/d/1k-HW0eAQe6_QTfd8dVcSLTnoUJ8gdzub/view" target="_blank" class="btn btn-primary">Ver certificado completo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <section id="habilidades" class="container py-5">
         <h2 class="half-underline">Habilidades</h2>
         <div class="row">
